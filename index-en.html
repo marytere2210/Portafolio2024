@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="desarrollador, backend, fontend">
+  <meta name="description" content="Mi primer Portafolio">
+  <meta name="author" content="Maria Teresa">
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Phetsarath:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Portfolio Maria T</title>
+  <link rel="shortcut icon" href="assets/img/logomariat.png" type="image/x-icon">
+  <!-- Iconos -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- JS -->
+   <script type="module" src="assets/js/main.js"></script>
+  <!-- Email JS --> 
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "pAbOwHMjuFbHQMWhR",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div class="loader flex--container">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 237 268" class="loader__logo">
+      <path fill="currentColor"
+        d="M108.473 2.81055C114.675 -0.783262 122.325 -0.783265 128.527 2.81055L226.74 59.7212C232.912 63.298 236.712 69.8919 236.712 77.0259V190.974C236.712 198.108 232.912 204.702 226.74 208.279L128.527 265.189C122.325 268.783 114.675 268.783 108.473 265.189L10.2601 208.279C4.08755 204.702 0.287529 198.108 0.287529 190.974V77.0259C0.287529 69.8919 4.08754 63.298 10.2601 59.7212L108.473 2.81055Z">
+      </path>
+    </svg>
+  </div>
+  <header class="header">
+    <nav class="navbar grid--container flex--container">
+      <!-- start menu-->
+      <div id="nav" class="navbar__menu">
+        <a href="#close"><i class="bx bx-x btn__close navbar__icon flex--container"></i></a>
+
+        <ul class="navbar__list flex--container">
+          <li class="navbar__item">
+            <a class="navbar__link active" href="#home">Top</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#about">About me</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#skills">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#projects">Portfolio</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end menu-->
+      <!-- start dark-mode-->
+      <div class="navbar__toggles flex--container">
+        <div class="navbar__toggle--darkmode flex--container">
+          <input type="checkbox" name="color-scheme" id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class="bx bx-sun navbar__toggle--darkmode-sun"></i>
+            <i class="bx bx-moon navbar__toggle--darkmode-moon"></i>
+          </label>
+        </div>
+         <!-- end dark-mode-->
+           <!-- start lenguage-->
+        <div class="navbar__toggle--language flex--container">
+          <input type="checkbox" name="language-toggle" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label"></label>
+        </div>
+        <!-- endlenguage-->
+      </div>
+      <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="home">
+      <i class="bx bxl-html5 home__layer home__layer--1" data-speed="-5"></i>
+      <i class="bx bxl-javascript home__layer home__layer--2" data-speed="5"></i>
+      <i class="bx bxl-css3 home__layer home__layer--3" data-speed="2"></i>
+      <i class="bx bxl-nodejs home__layer home__layer--4" data-speed="6"></i>
+      <i class="bx bxl-react home__layer home__layer--5" data-speed="8"></i>
+      <i class="bx bxl-tailwind-css home__layer home__layer--6" data-speed="-2"></i>
+      <i class="bx bxl-redux home__layer home__layer--7" data-speed="4"></i>
+      <i class="bx bxl-typescript home__layer home__layer--8" data-speed="-2"></i>
+      <i class="bx bxl-git home__layer home__layer--9" data-speed="6"></i>
+      <i class="bx bxl-graphql home__layer home__layer--10" data-speed="-7"></i>
+      <!-- profile -->
+      <div class="home__container grid--container">
+        <div class="home__image">
+          <img src="assets/img/maria2.png" alt="profile photo" title="Mariat" />
+        </div>
+             <div class="home__info">
+          <h1 class="home__title">!Hello world!</h1>
+
+          <p class="home__description">
+            My name is Maria and I am a web developer with an immense passion for technology and programming.
+          </p>
+        </div>
+
+      </div>
+    </section>
+ <!-- section About-->
+    <section id="about" class="about section">
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__container grid--container">
+        <p class="about__description">
+          I am a computer engineer with junior knowledge in web development and database management. I focus on process automation and optimization, providing efficient and effective solutions. My commitment to continuous learning allows me to always be up to date and fully enjoy technological development.
+        </p>
+
+        <div class="about__cards flex--container">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/maria1.jpg" alt="creating products"
+              title="Laborando como ingeniero" />
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/maria3.jpg" alt="happy smile"
+              title="Laborando como diseñador" />
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/maria4.jpg" alt="Captured developing"
+              title="rabajando en equipo" />
+          </div>
+        </div>
+      </div>
+    </section>
+  <section class="btn about__buttons"> 
+    <div class="about__buttons">
+      <a class=" btn--primary" href="" title="Cv_MariaT" download="Cv_MariaT" rel="noreferrer nofollow">
+        Download cv
+      </a>
+    </div>
+  </section>
+
+
+    <section id="skills" class="skills section">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__container grid--container">
+        <p class="skills__description flex--container">
+          I have a combination of technical skills and a proactive approach to web development, using the following tools.
+        </p>
+
+        <div class="skills__wrapper flex--container">
+          <div class="skills__cards flex--container">
+            <!--Card 1 -->
+            <details class="skills__cards-container" name="moreInfo" open>
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-html5 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">HTML</h3>
+
+                <p class="skills__card-description">
+                  Junior knowledge in web layout using HTML5, with the ability to design and structure web pages in an efficient and visually appealing manner.
+                </p>
+              </div>
+            </details>
+            <!--Card 2 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-css3 flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">CSS3</h3>
+
+                <p class="skills__card-description">
+                  CSS skills to design and style web pages, creating attractive and functional interfaces that improve the user experience.
+                </p>
+              </div>
+            </details>
+            <!--Card 3 -->
+            <details class="skills__cards-container" name="moreInfo">
+              <summary class="skills__cards-title flex--container">
+                <i class="bx bxl-javascript flex--container"></i>
+              </summary>
+              <div class="skills__card-container">
+                <h3 class="skills__card-title">Javascript</h3>
+
+                <p class="skills__card-description">
+                  JavaScript proficiency to develop interactive and dynamic functionalities in web applications, significantly improving user experience and optimizing operational efficiency.
+                </p>
+              </div>
+            </details>         
+          </div>
+        </div>
+        <div class="skills__tags flex--container">
+          <h3 class="skills__tags-title">Soft Skills</h3>
+          <div class="skills__tags-container flex--container">
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Teamwork</span>
+            <span class="skills__tag">Punctual</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Autodidact</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects section">
+      <h2 class="section__title">Projects</h2>
+
+      <div class="projects__container grid--container">
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <video id="miVideo" width="500" controls autoplay loop>
+              <source src="assets/video/video.mp4" type="video/mp4" alt="news" title="News Page" />
+            </video>
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">News website</h3>
+              <p class="projects__description">
+                Website for the news area of ​​the Government of the State of Carabobo (Venezuela)
+created in 2017, which allows user registration, registration of information (news) and subsequent publication on the main page,
+as well as editing the registered information and images, showing a gallery with all the visual data.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects__project">
+          <div class="projects__inner grid--container">
+            <div class="projects__image">
+              <video id="myVideo" width="500" controls autoplay loop>
+                <source src="assets/video/video1.mp4" type="video/mp4" alt="bd" title="Data recording" />
+              </video>
+            </div>
+
+            <div class="projects__info">
+              <h3 class="projects__name">Product consultation and registration</h3>
+              <p class="projects__description">
+                Query product descriptions and if they do not exist, they must be registered,
+                automatically assigning a series of pre-established consecutive numbers.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact section">
+      <h2 class="section__title">Contact</h2>
+
+      <div class="contact__container grid--container">
+        <div class="contact__info">
+          <h3 class="contact__info-title">Contact information</h3>
+          <p class="contact__info-description">
+            Ing. María Teresa
+          </p>
+
+          <address class="contact__info-data">
+            <div class="contact__info-item">
+              <i class="bx bxl-whatsapp"></i>
+
+              <span class="contact__info-number">
+                <a class="contact_link" href="https://wa.me/584244500771?text=Hola%20Mar%C3%ADa,%20estoy%20interesad@%20en%20reunirnos%20para%20conversar%20sobre%20un%20proyecto.%20" target="_blank"
+                  rel="noreferrer nofollow">Send message to WhatsApp</a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-phone"></i>
+
+              <span class="contact__info-number">
+                <a class="contact_link" href="tel:+584244500771" target="_blank" rel="noreferrer nofollow">
+                  +58 424 450 0771
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bxs-envelope"></i>
+
+              <span class="contact__info-mail">
+                <a class="contact_link" id="mail" href="mailto:maritere.18.mp@gmail.com" target="_blank" rel="noreferrer nofollow">
+                  maritere.18.mp@gmail.com
+                </a>
+              </span>
+            </div>
+
+            <div class="contact__info-item">
+              <i class="bx bx-map"></i>
+
+              <span class="contact__info-map">
+                <a class="contact_link" id="maps" href="https://maps.app.goo.gl/TWqgK4CKvYVAgB8A8" target="_blank" rel="noreferrer nofollow">
+                  Valencia, Venezuela
+                </a>
+              </span>
+            </div>
+            </address>
+        </div>
+        <div class="contact__form">
+          <h3 class="contact__form-title">Send message</h3>
+
+          <form id="form" class="contact__form-container">
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Mail</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Affair</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">message</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog class="contact__form-modal" id="modal">
+              Form sent successfully!
+              <button type="reset" id="btn_close-modal">Close</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Send
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section">
+    <div class="footer__container grid--container">
+      <div class="footer__info">
+        <h3 class="footer__title">MaryTere</h3>
+        <p class="footer__description">
+          Steve Jobs:
+
+          "Innovation is what distinguishes a leader from a follower."
+        </p>
+      </div>
+
+      <div class="footer__social">
+        <h3 class="footer__title">Social networks</h3>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.linkedin.com/in/maria-perez-69019b270/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.facebook.com/mariateresa.perezmujica?locale=es_LA" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-facebook"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://www.instagram.com/mary_ter3?igsh=MWVqaXg3Mm8xeHFhdg==" target="_blank" rel="noreferrer nofollow"><i
+                class="bx bxl-instagram"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://wa.me/584244500771?text=Hola%20Mar%C3%ADa,%20estoy%20interesad@%20en%20reunirnos%20para%20conversar%20sobre%20un%20proyecto.%20" target="_blank"><i class="bx bxl-whatsapp"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://github.com/marytere2210" target="_blank"><i class="bx bxl-github"></i></a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" target="_blank"><i class="bx bx-envelope"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footer__copy">&#64;<span> </span>All rights reserved</p>
+  </footer>
+</body>
+
+</html>
