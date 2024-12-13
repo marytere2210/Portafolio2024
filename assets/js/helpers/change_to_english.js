@@ -1,11 +1,16 @@
-const lenguage__en = document.querySelector('#language-toggle');
+const languageToggle = document.getElementById('language-toggle');
+const currentLanguage = window.location.href.includes('index-en.html')
+languageToggle.checked = currentLanguage;
 
-function redirect__en() {
-    if (lenguage__en.checked) {
-        window.location.href = 'index-en.html'; 
+function languageCheck(){
+languageToggle.addEventListener('change', () =>
+{
+    if (languageToggle.checked) {
+        window.location.href= 'index-en.html';
+    } else {
+        window.location.href= 'index.html';
     }
+});
 }
+export default languageCheck;
 
-lenguage__en.addEventListener('change', redirect__en);
-
-export default redirect__en;
