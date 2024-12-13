@@ -705,8 +705,9 @@ html {
 						font-size: 1.2rem;
 						font-weight: var(--font-semi-bold);
 						border-radius: 5px;
-						background-color: #ebebeb;
+						background-color:var(--bg-color-section1);
 						border: 1px solid #f0f0f0;
+						
 					}
 
 					textarea {
@@ -716,7 +717,21 @@ html {
 
 				.contact__form-modal {
 					position: fixed;
-					top: 50%;
+					top: 25%;
+					right: 25%;
+					text-align: center;					
+					border-color: solid rgba(219, 206, 198, 0.904);
+					border-radius: 10px;
+					background-color: var(--bg-color-section2);
+					color: var(--primary-color);
+					font-size: 18px;
+					 #btn_close-modal{ /* style button-modal*/
+						 background-color: var(--bg-color-buttons);
+						color: var(--primary-color);
+						font-size: 14px;
+						   }
+					  
+
 				}
 			}
 		}
@@ -910,12 +925,16 @@ html {
 	.contact {
 		.contact__container {
 			grid-template-columns: 0.5fr 1fr;
+			.contact__form{
+				
+
+			}
 		}
 	}
+}
 
 	.footer {
 		.footer__container {
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
-}
